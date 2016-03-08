@@ -3,21 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>搭伙團</title>
+    
+    <style type="text/css">
+        .char-table{
+            position: relative;
+        }
+        .char-table>div{
+            width:200px;
+            height:400px;
+            display: inline-block;
+            position: aboslute;
+        }
+        .center{
+            width: 350px;
+            height: 600px;
+            z-index: 30;
+        }
+        .on-the-side{
+            z-index: 25;
+        }
+        .back{
+            z-index: 0;
+        }
+        .char1{
+            background-color: #aaa;
+        }    
+        
+    </style>
 </head>
 <body>
     <div class="wrapper">
         
-        <div class="today's-menu">
-            <div class="content">
+        <!--角色列表-->
+        <div class="char-table">
+            <div class="char1 center">
                 
             </div>
-            <div class="pic">
+            <div class="char2 on-the-side">
+                
+            </div>
+            <div class="char3 on-the-side">
+                
+            </div>
+            <div class="char4 on-the-side">
+                
+            </div>
+            <div class="char5 back">
                 
             </div>
         </div>
         
     </div>
     <script>
+        
+        // 切換角色圖片
+        function init(){
+             
+             var chars = document.querySelectorAll(".char-table>div");
+            
+             chars.addEventListener("click", goToCenter);
+             
+        }
+        
+        function goToCenter(){
+            
+        }
+       
         
     </script>
 </body>
